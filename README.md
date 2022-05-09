@@ -36,8 +36,6 @@ Inicie a REST API
 
 Em caso de erro, tente:
 
-Inicie a REST API
-
 ```bash
  npx json-server --watch db.json
 ```
