@@ -1,0 +1,29 @@
+{
+  "tarefas": [
+    {
+      "id": 2,
+      "name": "Arrumar meu quarto ",
+      "status": "em andamento"
+    },
+    {
+      "id": 3,
+      "name": "arrumar o guarda-roupa",
+      "status": "pendente"
+    },
+    {
+      "id": 5,
+      "name": "estudar angular",
+      "status": "em andamento"
+    },
+    {
+      "id": 6,
+      "name": "ler um livro",
+      "status": "pendente"
+    },
+    {
+      "id": 7,
+      "name": "Fazer front para Totvs",
+      "status": "em andamento"
+    }
+  ]
+}

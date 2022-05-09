@@ -1,0 +1,70 @@
+.centralizador {
+    min-height: 75vh;
+    background-color: #f8f9fa;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 150px 80px 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.card {
+    height: 15vh;
+    width: 20vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 0;
+    color: #fff;
+    background-color: #343a40;
+    transition: all 0.3s ease;
+    font-size: 14px;
+  
+}
+
+.card:hover{
+    background-color: #24252c;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+
+.tittleStatus {
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .centralizador {
+        min-height: 75vh;
+        background-color: #f8f9fa;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .card {
+        height: 20vh;
+        width: 60vw;
+      
+    }
+
+    .tittleStatus {
+        width: 30vw;
+    }
+}

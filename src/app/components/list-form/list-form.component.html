@@ -1,0 +1,15 @@
+<form (ngSubmit)="submit()" [formGroup]="listForm" #FormDir="ngForm">
+  <div>
+    <label for="Name">Nome:</label>
+    <input
+      type="text"
+      placeholder="Digite o nome da lista"
+      formControlName="nameList"
+      required
+    />
+    <div *ngIf="nameList.invalid && FormDir.submitted">
+      <p *ngIf="nameList.errors?.['required']">O nome é obrigatório!</p>
+    </div>
+  </div>
+  <input type="submit" value="{{ btnText }}" />
+</form>

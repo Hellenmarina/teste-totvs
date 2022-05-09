@@ -1,0 +1,7 @@
+<div *ngIf="tarefas">
+  <app-tarefas-form
+    (onSubmit)="editTarefa($event)"
+    [tarefasData]="tarefas"
+    [btnText]="btnText"
+  ></app-tarefas-form>
+</div>

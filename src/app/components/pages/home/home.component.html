@@ -1,0 +1,20 @@
+<div class="centralizador">
+  <div *ngFor="let tarefa of allTarefas" class="card">
+    <div class="tittleStatus">
+      <h6>{{ tarefa.name }}</h6>
+      <p>{{ tarefa.status }}</p>
+    </div>
+    <div class="buttons">
+      <button class="btn btn-light btn-sm" (click)="removeTarefa(tarefa.id!)">
+        <i class="fa-solid fa-trash-can"></i>
+      </button>
+
+      <button
+        class="btn btn-light btn-sm"
+        routerLink="tarefas/edit/{{ tarefa.id }}"
+      >
+        <i class="fa-solid fa-pen-to-square"></i>
+      </button>
+    </div>
+  </div>
+</div>
