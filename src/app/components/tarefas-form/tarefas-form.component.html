@@ -6,26 +6,28 @@
         <label for="validationServer01" for="Name">Nome:</label>
         <input
           type="text"
-          class="form-control is-invalid"
+          class="form-control {valid|invalid}-feedback"
           id="validationServer01"
           formControlName="name"
           placeholder="Digite o nome da tarefa"
-          value="Mark"
           required
         />
-        <div class="invalid-feedback" *ngIf="name.invalid && FormDir.submitted">
-          <p *ngIf="name.errors?.['required']">O nome é obrigatório!</p>
+        <div
+          class="{valid|invalid}-feedback"
+          *ngIf="name.invalid && FormDir.submitted"
+        >
+          <p class="validator" *ngIf="name.errors?.['required']">
+            O nome é obrigatório!
+          </p>
         </div>
       </div>
       <div class="col-md-4 mb-3">
-        <label for="validationServer02" for="Status">Status</label>
+        <label for="validationServer02" for="Status">Status:</label>
         <select
           type="text"
-          class="form-control is-invalid"
+          class="form-control {valid|invalid}-feedback"
           id="validationServer02"
           formControlName="status"
-          placeholder="Sobrenome"
-          value="Otto"
           required
         >
           <option value="" selected>Qual status da sua tarefa?</option>
@@ -34,10 +36,10 @@
           <option value="concluída">Concluída</option>
         </select>
         <div
-          class="invalid-feedback"
+          class="{valid|invalid}-feedback"
           *ngIf="status.invalid && FormDir.submitted"
         >
-          <p *ngIf="status.errors?.['required']">
+          <p class="validator" *ngIf="status.errors?.['required']">
             Defina o status da sua tarefa
           </p>
         </div>
