@@ -43,13 +43,7 @@ Em caso de erro, tente:
 Inicie o servidor
 
 ```bash
-  ng serve
-```
-
-Em caso de erro, tente: 
-
-```bash
-  npm start
+ npm start
 ```
 
 ## Funcionalidades
