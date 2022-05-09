@@ -13,7 +13,7 @@ A ideia do desafio é fazer uma aplicação que tenha a possibilidade de criar l
 Clone o projeto em sua máquina
 
 ```bash
-  git clone https://Hellenmarina/teste-totvs.gitS
+  git clone https://Hellenmarina/teste-totvs.git
 ```
 
 Entre no diretório do projeto
