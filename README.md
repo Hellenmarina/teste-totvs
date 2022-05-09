@@ -34,10 +34,24 @@ Inicie a REST API
   json-server --watch db.json
 ```
 
+Em caso de erro, tente:
+
+Inicie a REST API
+
+```bash
+ npx json-server --watch db.json
+```
+
 Inicie o servidor
 
 ```bash
   ng serve
+```
+
+Em caso de erro, tente: 
+
+```bash
+  npm start
 ```
 
 ## Funcionalidades
