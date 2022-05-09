@@ -13,7 +13,7 @@ A ideia do desafio é fazer uma aplicação que tenha a possibilidade de criar l
 Clone o projeto em sua máquina
 
 ```bash
-  git clone https://Hellenmarina/teste-totvs.gitS
+  git clone https://Hellenmarina/teste-totvs.git
 ```
 
 Entre no diretório do projeto
@@ -34,10 +34,16 @@ Inicie a REST API
   json-server --watch db.json
 ```
 
+Em caso de erro, tente:
+
+```bash
+ npx json-server --watch db.json
+```
+
 Inicie o servidor
 
 ```bash
-  ng serve
+ npm start
 ```
 
 ## Funcionalidades
